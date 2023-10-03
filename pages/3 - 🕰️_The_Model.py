@@ -69,7 +69,7 @@ def agrupacion(dfinput):
 
     data = sumatoria.set_index('fecha')
 
-    data.sort_values(by='fecha',ascending=False)
+    data = data.sort_values(by='fecha',ascending=False)
 
     y = data['pax_total'].resample(grouped_by[group]).sum()
 

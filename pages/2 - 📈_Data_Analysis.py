@@ -282,8 +282,8 @@ def media_pasajeros_estacion(df):
    fig, ax = plt.subplots(figsize=(4,2))
    fig.patch.set_facecolor(color)
    
-   sns.barplot(x = df['amax'], 
-               y=df['estacion'], palette = 'YlOrRd', width=1)
+   sns.barplot(x = df['mean'], 
+               y=df['estacion'], palette = 'YlOrRd')
    
    plt.ylabel(None)
    plt.xlabel(None)
